@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css?family=Inter');
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+body{
+    margin: 50px
+}
+._header{
+    display:flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin: 20px;
+    padding: 10px;
+}
+.logo_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo_name h1{
+    font-size: 24px;
+}
+._logo{
+    height: 32px;
+}
+._profile{
+    height: 32px;
+}
+.profile_button{
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+.profile_button:hover{
+    background-color: gainsboro;
+}
+._nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 23px;
+    padding: 10px 0px;
+}
+._nav .checkboxes{
+    display: flex;
+}
+.pseudo_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid rgb(156, 156, 156);
+    background-color: white;
+    cursor: pointer;
+    margin: 4px;
+    padding: 7px 16px 7px 16px;
+    transition: background-color 0.3s;
+}
+._nav ._select{
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid rgb(156, 156, 156);
+    background-color: white;
+    padding: 7px 16px 7px 16px;
+    transition: background-color 0.3s;
+}
+._main{
+    display: flex;
+}
+._section{
+    margin: 0px 12px 0px 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+._article{
+    margin: 5px 12px 5px 12px;
+    flex: 0 0 calc(48% - 10px);
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+._section ._article .article_info{
+    font-size: 18px;
+    color: #354153;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+    overflow-y: hidden; 
+    text-overflow: ellipsis;
+}
+._main ._section ._article .date_and_name{
+    display:flex;
+    color: #667085;
+    font-size: 16px;
+    justify-content: space-between;
+    margin: 10px 0px 10px 0px;
+}
+._main ._section ._article h2{
+    font-size: 24px;
+    color: #0D1421;
+    margin: 10px 0px 10px 0px;
+}
+
+._nav ._select:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
+._nav .checkboxes .pseudo_button:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
+footer{
+    margin: 100px 24px 24px 48px;
+}
+footer .autor{
+    font-size: 16px;
+    color: #667085;
+    /* white-space: nowrap; */
+}
+.when_checked{
+    /* display: none; */
+    margin-left: 10px;
+    height: auto;
+}
+@media (max-width: 650px) {
+    body{
+        margin: 20px;
+    }
+    ._header{
+        margin: 5px;
+        padding: 0px;
+    }
+    ._logo{
+        height: 20px;
+    }
+    .logo_name h1{
+        font-size: 17px;
+    }
+    ._profile{
+        height: 20px;
+    }
+    .profile_button{
+        padding: 5px;
+    }
+    ._nav {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        padding: 0px;
+        margin: 0px;
+    }
+    .checkboxes {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    ._nav ._select{
+        font-size: 12px;
+        width: 150px;
+        height: 35px;
+    }
+    .pseudo_button {
+        font-size: 12px;
+        margin-right: 0;
+        margin-bottom: 7px;
+        margin-top: 0px;
+        padding: 5px 5px;
+    }
+    ._article {
+        flex: 0 0 100%;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    ._main ._section ._article .date_and_name{
+        font-size: 13px;
+    }
+    ._section{
+        margin: 0px 5px 0px 0px;
+    }
+    ._main ._section ._article h2{
+        font-size: 18px;
+    }
+    ._section ._article .article_info{
+        font-size: 14px;
+    }
+    footer{
+        margin: 50px 10px 10px 10px;
+    }
+    footer .autor{
+        font-size: 13px;
+    }
+}
